@@ -1,0 +1,610 @@
+html{
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color__primario: #003249;
+    --color__secundario: #be95c4;
+    --color__tercero: #f4acb7;
+    --color__cuarto: #80ced7;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Bitter', serif;
+    font-family: 'Epilogue', sans-serif;
+    font-family: 'Lexend', sans-serif;
+}
+
+body {
+    background-color: #376996;
+}
+
+
+/**Imágenes**/
+
+.circular--square1 {
+    border-radius: 50%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    border: 0.5em solid var(--color__primario);
+  }
+
+
+.circular--square {
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 25%;
+  }
+
+
+
+/**Barra de Navegación**/
+.container{
+    display: flex;
+    width: 100%;
+    max-width: 1700px;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+nav {
+    background-color:var(--color__primario);
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
+nav .nav {
+    padding: 0.8em 0em;
+}
+
+nav .container .logo h1 a{
+    color: var(--color__secundario);
+    font-size: 1em;
+}
+
+nav .container .logo h1 a:hover{
+    color: var(--color__tercero);
+}
+
+nav .container ul li {
+    display: inline;
+    padding: 0.2em;
+    font-weight: 500;
+}
+
+nav .container ul li a{
+    font-size: 1em;
+    color: var(--color__cuarto);
+    padding: 0.3em 0.5em;
+}
+
+nav .container ul li a:hover{
+    color: var(--color__secundario);
+    border-bottom: 0.2em solid var(--color__secundario);
+}
+
+/**Termina Barra de Navegación**/
+
+/**Comienza Primera Sección**/
+.bienvenida{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:center;
+    height: 95vh;
+    max-width: 1700px;
+    margin: auto;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    font-size: 1 em;
+    clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 50px));
+    background-color: #ccdbdc;
+
+}
+
+section .wrap {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    width: 40%;
+    height: 50vh;
+    max-width: 1700px;
+    margin: auto;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    font-size: 1.2em;
+    
+}
+
+/**Foto Mía**/
+.foto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width: 25%;
+    height: 95vh;
+    max-width: 1700px;
+    margin: auto;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.botones{
+    display: flex;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+    gap: 0.8em;
+}
+
+.botones a{
+    background-color: var(--color__primario);
+    color: white;
+    padding: 0.3em;
+    border-radius: 0.7em;
+    
+}
+
+/**Termina Primera Sección**/
+
+/**Comienza Segunda Sección**/
+.wrap2{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    width: 70%;
+    height: 20vh;
+    max-width: 1700px;
+    margin: auto;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+}
+
+
+.wrap2_fotos{
+    display: flex;
+    flex-direction: row;
+    align-items:left;
+    justify-content:center;
+    width: 70%;
+    max-width: 1700px;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+
+
+
+.titulospequeños{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content:center;
+    width: 70%;
+    height: 10vh;
+    max-width: 1700px;
+    margin: auto;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+    justify-content: space-between;
+}
+
+hr{
+    height: 1.2em;
+}
+
+
+
+.trabajos{
+    padding-bottom: 5em;
+    background-color: #376996;
+}
+
+.wrap2 h1{
+    font-size: 2em;
+}
+
+.información{
+    background-color:var(--color__primario);
+}
+
+/* slider*/
+
+body {
+    position: center;
+    height: 100%;
+  }
+
+  body {
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+  
+    
+ 
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    object-fit: scale-down;
+  
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    justify-content: center;
+    
+  }
+  /* fin slider*/
+
+  .wrap3{
+    display: flex;
+    flex-direction: column;
+    align-items:left;
+    justify-content:flex-start;
+    width: 50%;
+    height: 80vh;
+    max-width: 1700px;
+    margin: auto;
+    text-align: center;
+    color:white;
+    font-size: 1em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+    .wrap3 h1{
+     font-size: 2em;
+    }
+
+    .wrap3 p{
+      margin-top: 0.5em;
+      margin-bottom: 2em;
+    }
+ 
+/**Seccion cuatro**/
+
+    .wrap4 {
+      display: flex;
+      flex-direction: column;
+     align-items: center;
+     justify-content:center;
+      width: 70%;
+     height: 50vh;
+      max-width: 1700px;
+      margin: auto;
+      text-align: center;
+     color: #faedcd;
+      font-size: 1.4em;
+    }
+
+    .iconos{
+        display: flex;
+     flex-wrap: wrap;
+    }
+
+
+    .contacto{
+        background-color: #ccdbdc;
+    }
+
+    .contacto h1{
+        color: black;
+        font-size: 2em;
+        padding-top: 0.6em;
+    }
+
+    .contacto p{
+        color: black;
+        font-size: 0.8em;
+        text-align: center;
+    }
+
+    .contacto ul li{
+        color: white;
+        font-size: .8em;
+        list-style: none;
+    }
+
+    .contacto i{
+       font-size: 2em;
+        color:var(--color__primario);
+        padding: .5em;
+    }
+
+    .contacto i:hover{
+        color: var(--color__secundario);
+    }
+
+    /*Pie de página*/
+
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 6vh;
+        font-size: .5em;
+        text-align: center;
+        color: white;
+    }
+
+    footer h1{
+        font-weight: 400;
+    }
+
+
+                                                       /**Responsive**/
+
+
+ /* Primero ; 768px a 1024px */
+@media (min-width: 768px) and (max-width: 1024px)  {
+
+    .container{
+        padding: .1em;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    nav .container .logo h1 a{
+    font-size: 1.5em;
+    }
+
+    .bienvenida h1{
+        font-size: 2em;
+    }
+    
+    .bienvenida p{
+        font-size: 1.3em;
+    }
+
+    .bienvenida i{
+        font-size: 1.5em;
+    }
+
+    .informacion h1{
+        font-size: 4.5em;
+    }
+
+    .informacion p{
+        font-size: 1.3em;
+    }
+
+    .informacion ul li {
+        display: inline;
+        padding: .1em;
+        font-weight: 500;
+    }
+    
+    .informacion ul li a{
+        font-size: .6em;
+        padding: .8em;
+        border-radius: 1.5em;
+    }
+
+    .informacion i{
+        font-size: 1.5em;
+    }
+
+    .trabajos h1{
+        font-size: 3em;
+        height: 0vh;
+    }
+
+    .trabajos p{
+        font-size: 1.5em;
+        height: 0vh;
+    }
+
+    .trabajos img{
+        width: 45%;
+        height:45%;
+    }
+
+    .contacto h1{
+        font-size: 3em;
+    }
+
+    .contacto p{
+        font-size: 1.1em;
+        text-align: justify;
+    }
+
+    .contacto i{
+        font-size: 2.2em;
+    }
+
+  }
+  
+  /*Segundo ; 481px a 767px */
+  @media (min-width: 481px) and (max-width: 767px) {
+  
+    .container{
+        padding: 0em;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    nav .container .logo h1 a{
+        font-size: 1em;
+    }
+
+    nav .container ul li a{
+        font-size: .5em;
+    }
+    .bienvenida h1{
+        font-size: 2em;
+    }
+    
+    .bienvenida p{
+        font-size: .8em;
+    }
+
+    .informacion h1{
+        font-size: 2em;
+    }
+
+    .informacion p{
+        font-size: 0.8em;
+    }
+
+    .informacion ul li {
+        display: inline;
+        padding: .1em;
+        font-weight: 500;
+    }
+    
+    .informacion ul li a{
+
+        font-size: 0.6em;
+        padding: 0.8em;
+        border-radius: 1.5em;
+    }
+
+    .trabajos h1{
+        font-size: 3em;
+    }
+
+    .trabajos p{
+        font-size: 1em;
+    }
+
+    .contacto h1{
+        font-size: 2em;
+    }
+
+    .contacto p{
+        font-size: .8em;
+        text-align: justify;
+        margin-bottom: 1em;
+    }
+
+    .contacto i{
+        font-size: 2em;
+    }
+
+  }
+  
+  /*Tercero ; 320px a 479px */
+  @media (min-width: 320px) and (max-width: 480px) {
+  
+    .container{
+        padding: 0em;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    nav .container .logo h1 a{
+        font-size: 0.6em;
+    }
+
+    nav .container ul li a{
+        font-size: 0.4em;
+    }
+
+    .bienvenida h1{
+        font-size: 1em;
+    }
+
+    .bienvenida p{
+        font-size: 0.6em;
+    }
+
+    .bienvenida i{
+        font-size: 1em;
+    }
+
+    .informacion h1{
+        font-size: 1em;
+    }
+
+    .informacion p{
+        font-size: 0.6em;
+    }
+
+    .informacion ul li {
+        display: inline;
+        padding: 0.1em;
+        font-weight: 500;
+    }
+    
+    .informacion ul li a{
+        font-size: 0.4em;
+        padding: 0.8em;
+        border-radius: 1.5em;
+    }
+
+    .informacion i{
+        font-size: 1em;
+    }
+
+    .trabajos h1{
+        font-size: 1em;
+    }
+
+    .trabajos p{
+        font-size: 0.5em;
+    }
+
+    .contacto h1{
+        font-size: 1em;
+    }
+
+    .contacto p{
+        font-size: 0.5em;
+        text-align: justify;
+        margin-bottom: 1em;
+    }
+
+    .contacto i{
+        font-size: 1em;
+    }
+
+    footer{
+        font-size: 0.3em;
+    }
+
+  }

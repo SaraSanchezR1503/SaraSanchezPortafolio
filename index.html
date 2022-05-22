@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Epilogue:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Sara Sánchez Rojas</title>
+    <link rel="stylesheet" href="assets/icons/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+     <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+     <!--Animation-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    </head>
+
+    <body>
+    <nav class="navegador__header">
+        <div class="container nav">
+        <div class="logo">
+            <h1><a href="#seccion1">Sara Sánchez R</a> </h1>
+        </div>
+        <ul>
+            <li><a href="#seccion2">Trabajos</a></li>
+            <li><a href="#seccion3">Información</a></li>
+            <li><a href="#seccion4">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!--Sección de foto y presentación-->
+    <section class="bienvenida" id="seccion1">
+           
+        <div class="foto">
+            <img class="circular--square1" src="img/sarasanchezro.jpg" />
+        </div>
+
+        <!--Sección de foto y presentación-->
+        <div class="wrap">
+            <!--Sección de la presentación-->
+            <h1>¡ Hola, Soy Sara !</h1>
+            <br>
+            <p>Diseñadora Gráfica. <br>
+               Bienvenid@ a mi portafolio, actualmente estoy en el quinto semestre de Diseño Gráfico en la Universidad Católica Luis Amigó, apasionada por la ilustración, el color, el arte y la literatura. 
+               Este portafolio contiene una recopilación de trabajos realizados en mis semestres cursados.
+            </p>
+
+            <div class="botones">
+            <a class="boton" href="#seccion2"> Trabajos</a>
+            <a class="boton" href="#seccion3">Información</a>
+            </div>
+
+                <div class="boton">
+                <div class="animate__animated animate__bounce animate__faster">
+                <a href="#seccion2">
+                <i class="fa-solid fa-chevron-down"></i></a>
+                </div>
+        </div>
+
+    </section>
+
+    <section class="trabajos" id="seccion2">
+        <div class="wrap2">
+            <h1>Algunos de mis trabajos</h1>
+
+        </div>
+
+             <div class="wrap2_fotos">
+
+                <img class="circular--square" src="img/lasolar3.jpg" />
+                <img class="circular--square" src="img/butterfly2.jpg" />
+                <img class="circular--square" src="img/Entre tú y yo - Sara y Laura Sánchez.jpg" />
+         </div>
+
+            <div class="titulospequeños">
+            <p>Volante sobre La Solar. </p> <br>
+            <hr>
+            <p>Ilustración cientifica.</p><br>
+            <hr>
+            <p>Diseño Editorial. </p><br>
+
+             </div>
+    </section>
+
+
+
+
+
+    <!--Sección 3-->
+    <section class="información" id="seccion3">
+        <div class="wrap3">
+        <h1>Información.</h1>
+        <p>Tengo conocimientos en áreas como el Diseño Editorial, Branding, 
+            ilustración,<br> Fotografía, la Suite de Adobe como: Photoshop, Ilustrator, Premier e InDesign.</p>
+ 
+        <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"> <img src="img/golden2.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="img/apocal.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="img/hatsu1.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="img/pay.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="img/chus.jpg" alt=""></div>
+      
+  
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+     
+</section>
+
+
+        </div>
+    </section>
+
+    <section class="contacto" id="seccion4">
+        <div class="wrap4">
+            <h1>Contacto</h1> 
+            <p>Gracias por tu visita. <br> Para más información contactame aquí:</p>
+            <ul class="iconos">
+            <li><a href="https://www.facebook.com/campaign/landing.php?&campaign_id=1661872069&extra_1=s%7Cc%7C520484624287%7Ce%7Cfacebook%7C&placement=&creative=520484624287&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D1661872069%26adgroupid%3D64818685900%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-541132862%26loc_physical_ms%3D1029279%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=Cj0KCQjwvqeUBhCBARIsAOdt45bWyXnNQOh95MwshhgOEvfhyVlYnTc3xbMix-PYXN0MEruqPqGOvBoaApFPEALw_wcB" target="_blank"> <i class="fa-brands fa-facebook"></i> </a></li>
+            <li><a href="https://www.instagram.com/sarasanchezr15/?hl=es" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.google.com/intl/es-419/gmail/about/" target="_blank"><i class="fa-solid fa-envelope"></i></a> </li>
+            </ul>
+        </div>
+    </section>
+
+<footer>
+    <h1>Sara Sánchez Rojas 2022©</h1>
+</footer>
+
+
+ </section>    
+</body>
+</html>
